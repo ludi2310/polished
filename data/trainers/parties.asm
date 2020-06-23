@@ -1487,7 +1487,7 @@ Lyra1Group:
 	db "Lyra@"
 	db TRAINERTYPE_NICKNAME
 	; party
-	db 5, CHIKORITA, "Chicory@"
+	db 4, CHIKORITA, "Chicory@"
 	db -1 ; end
 
 ; ================
@@ -1496,7 +1496,7 @@ Lyra1Group:
 	db "Lyra@"
 	db TRAINERTYPE_NICKNAME
 	; party
-	db 5, CYNDAQUIL, "Cinder@"
+	db 4, Charmander, "Cinder@"
 	db -1 ; end
 
 ; ================
@@ -1505,7 +1505,7 @@ Lyra1Group:
 	db "Lyra@"
 	db TRAINERTYPE_NICKNAME
 	; party
-	db 5, TOTODILE, "Toto@"
+	db 4, TOTODILE, "Toto@"
 	db -1 ; end
 
 ; ================
