@@ -1,7 +1,7 @@
 HappinessChanges:
 ; change if happiness < 100, change if happiness < 200, change otherwise
 	db  +5,  +3,  +2 ; Gained a level
-	db  +5,  +3,  +2 ; Vitamin
+	db  +50,  +50,  +50 ; Vitamin
 	db  +1,  +1,  +0 ; X Item
 	db +10,  +5,  +2 ; EV lowering berry
 	db  +3,  +2,  +1 ; Battled a Gym Leader
