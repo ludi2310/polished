@@ -1496,7 +1496,7 @@ Lyra1Group:
 	db "Lyra@"
 	db TRAINERTYPE_NICKNAME
 	; party
-	db 5, Charmander, "Cinder@"
+	db 5, CHARMANDER, SHINY_MASK, "Cinder@"
 	db -1 ; end
 
 ; ================
