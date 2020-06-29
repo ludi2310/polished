@@ -4564,7 +4564,7 @@ OfficerFGroup:
 	db "Jamie@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 55, DRAGORAN
+	db 55, DRAGONITE
 	db 58, ARCANINE
 	db 57, BLASTOISE
 	db -1 ; end
