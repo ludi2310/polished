@@ -6502,9 +6502,9 @@ SageGroup:
 	db "Chow@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 3, BELLSPROUT
-	db 3, BELLSPROUT
-	db 3, BELLSPROUT
+	db 4, BELLSPROUT
+	db 4, BELLSPROUT
+	db 4, BELLSPROUT
 	db -1 ; end
 
 ; ================
@@ -6513,9 +6513,9 @@ SageGroup:
 	db "Nico@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 3, BELLSPROUT
-	db 3, BELLSPROUT
-	db 3, HOOTHOOT
+	db 4, BELLSPROUT
+	db 4, ABRA
+	db 4, HOOTHOOT
 	db -1 ; end
 
 ; ================
@@ -6524,7 +6524,7 @@ SageGroup:
 	db "Jin@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 7, BELLSPROUT
+	db 8, SLOWPOKE
 	db -1 ; end
 
 ; ================
@@ -6534,7 +6534,7 @@ SageGroup:
 	db TRAINERTYPE_NORMAL
 	; party
 	db 7, BELLSPROUT
-	db 7, GASTLY
+	db 8, GASTLY
 	db -1 ; end
 
 ; ================
@@ -6544,7 +6544,7 @@ SageGroup:
 	db TRAINERTYPE_NORMAL
 	; party
 	db 22, HAUNTER
-	db 21, VULPIX
+	db 21, DITTO
 	db -1 ; end
 
 ; ================
@@ -6553,10 +6553,10 @@ SageGroup:
 	db "Ping@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 17, GASTLY
-	db 17, HOOTHOOT
-	db 18, GASTLY
-	db 18, NOCTOWL
+	db 20, GASTLY
+	db 20, HOOTHOOT
+	db 20, GASTLY
+	db 20, NOCTOWL
 	db -1 ; end
 
 ; ================
@@ -6565,9 +6565,9 @@ SageGroup:
 	db "Edmond@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 3, BELLSPROUT
+	db 4, BELLSPROUT
 	db 3, HOOTHOOT
-	db 3, BELLSPROUT
+	db 5, CHIKORITA
 	db -1 ; end
 
 ; ================
@@ -6576,7 +6576,7 @@ SageGroup:
 	db "Neal@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 6, BELLSPROUT
+	db 7, MISDREAVUS
 	db 6, HOOTHOOT
 	db -1 ; end
 
@@ -6637,7 +6637,7 @@ KimonoGirl1Group:
 	db "Naoko@"
 	db TRAINERTYPE_ITEM
 	; party
-	db 22, FLAREON, LUM_BERRY
+	db 24, FLAREON, LUM_BERRY
 	db -1 ; end
 
 ; ================
@@ -6651,7 +6651,7 @@ KimonoGirl2Group:
 	db "Sayo@"
 	db TRAINERTYPE_ITEM
 	; party
-	db 22, ESPEON, LUM_BERRY
+	db 24, ESPEON, LUM_BERRY
 	db -1 ; end
 
 ; ================
@@ -6665,7 +6665,7 @@ KimonoGirl3Group:
 	db "Zuki@"
 	db TRAINERTYPE_ITEM
 	; party
-	db 22, UMBREON, LUM_BERRY
+	db 24, UMBREON, LUM_BERRY
 	db -1 ; end
 
 ; ================
@@ -6679,7 +6679,7 @@ KimonoGirl4Group:
 	db "Kuni@"
 	db TRAINERTYPE_ITEM
 	; party
-	db 22, VAPOREON, LUM_BERRY
+	db 24, VAPOREON, LUM_BERRY
 	db -1 ; end
 
 ; ================
@@ -6693,7 +6693,7 @@ KimonoGirl5Group:
 	db "Miki@"
 	db TRAINERTYPE_ITEM
 	; party
-	db 22, JOLTEON, LUM_BERRY
+	db 24, JOLTEON, LUM_BERRY
 	db -1 ; end
 
 ; ================
@@ -6709,7 +6709,7 @@ ElderGroup:
 	; party
 	db 11, GIRAFARIG
 	db 10, GASTLY
-	db 12, BELLSPROUT
+	db 12, TOGETIC
 	db -1 ; end
 
 ; ================
@@ -8562,8 +8562,8 @@ BlackbeltGroup:
 	db TRAINERTYPE_NORMAL
 	; party
 	db 46, MACHOKE
-	db 48, MACHOKE
-	db 50, MACHOKE
+	db 48, MACHAMP
+	db 50, MACHAMP
 	db -1 ; end
 
 ; ================
@@ -10090,11 +10090,11 @@ endc
 	db "Chiara@"
 	db TRAINERTYPE_ITEM | TRAINERTYPE_EVS | TRAINERTYPE_PERSONALITY | TRAINERTYPE_MOVES
 	; party
-	db 23, WEEPINBELL, BINDING_BAND, 52, ABILITY_1 | HASTY, FEMALE
+	db 26, WEEPINBELL, BINDING_BAND, 52, ABILITY_1 | HASTY, FEMALE
 		db WRAP, SLEEP_POWDER, POISONPOWDER, STUN_SPORE
-	db 23, AZUMARILL, BINDING_BAND, 52, HIDDEN_ABILITY | HASTY, FEMALE
+	db 26, AZUMARILL, BINDING_BAND, 52, HIDDEN_ABILITY | HASTY, FEMALE
 		db WHIRLPOOL, PERISH_SONG, AQUA_TAIL, PROTECT
-	db 24, CHARMELEON, BINDING_BAND, 52, ABILITY_2 | HASTY, FEMALE
+	db 27, CHARMELEON, BINDING_BAND, 52, ABILITY_2 | HASTY, FEMALE
 		db FIRE_SPIN, DRAGON_RAGE, SMOKESCREEN, PROTECT
 	db -1 ; end
 
@@ -10382,7 +10382,7 @@ ProtonGroup:
 	db "Proton@"
 	db TRAINERTYPE_EVS
 	; party
-	db 16, ZUBAT, 32
+	db 16, KADABRA, 32
 	db 16, QWILFISH, 32
 	db 16, KOFFING, 32
 	db -1 ; end
@@ -10440,12 +10440,12 @@ ArcherGroup:
 	db 45, AERODACTYL, LIFE_ORB, ABILITY_1 | QUIRKY, MALE
 		db EARTHQUAKE, STONE_EDGE, WING_ATTACK, ROOST
 	db 46, RATICATE, BLACKGLASSES, ABILITY_1 | QUIRKY, MALE | ALOLAN_FORM
-		db CRUNCH, SUPER_FANG, HYPER_FANG, DOUBLE_EDGE
+		db CRUNCH, SUPER_FANG, SWORDS_DANCE, DOUBLE_EDGE
 	db 44, GENGAR, SPELL_TAG, ABILITY_1 | QUIRKY, MALE
 		db HYPNOSIS, CONFUSE_RAY, THUNDERBOLT, SHADOW_BALL
 	db 45, WEEZING, BRIGHTPOWDER, ABILITY_1 | QUIRKY, MALE
 		db SMOKESCREEN, WILL_O_WISP, PAIN_SPLIT, SLUDGE_BOMB
-	db 47, HOUNDOOM, KINGS_ROCK, ABILITY_1 | QUIRKY, MALE
+	db 47, HOUNDOOM, KINGS_ROCK, SHINY_MASK, HIDDEN_ABILITY | QUIRKY, MALE
 		db SMOKESCREEN, SUPER_FANG, FEINT_ATTACK, FLAMETHROWER
 	db -1 ; end
 
@@ -10461,7 +10461,7 @@ ArcherGroup:
 		db PURSUIT, HYPER_FANG, SCARY_FACE, CRUNCH
 	db 33, WEEZING, SILK_SCARF, 88, ABILITY_1 | QUIRKY, MALE
 		db WILL_O_WISP, EXPLOSION, VENOSHOCK, SMOKESCREEN
-	db 34, HOUNDOOM, KINGS_ROCK, 88, ABILITY_1 | QUIRKY, MALE
+	db 34, HOUNDOOM, KINGS_ROCK, 88, HIDDEN_ABILITY | QUIRKY, MALE
 		db FLAMETHROWER, SMOKESCREEN, FEINT_ATTACK, SUPER_FANG
 	db -1 ; end
 
