@@ -127,7 +127,7 @@ BugsyGroup:
 		db QUICK_ATTACK, DOUBLE_TEAM, SONIC_BOOM, U_TURN
 	db 16, BEEDRILL, NO_ITEM, 32, ABILITY_1 | QUIRKY, MALE
 		db POISON_STING, STRING_SHOT, SWORDS_DANCE, SLASH
-	db 18, SHUCKLE, NO_ITEM, 32, ABILITY_1 | CALM, FEMALE
+	db 18, SHUCKLE, NO_ITEM, 32, SHINY_MASK | ABILITY_1 | CALM, FEMALE
 		db TOXIC, SANDSTORM, FLASH, PROTECT
 	db 18, SCYTHER, SITRUS_BERRY, 32, HIDDEN_ABILITY | QUIRKY, FEMALE
 		db QUICK_ATTACK, LEER, WING_ATTACK, U_TURN
@@ -220,7 +220,7 @@ else
 endc
 	db 28, MISMAGIUS, NO_ITEM, 64, ABILITY_1 | QUIRKY, MALE
 		db DAZZLINGLEAM, DARK_PULSE, NASTY_PLOT, SHADOW_BALL
-	db 29, GENGAR, WIDE_LENS, 64, HIDDEN_ABILITY | QUIRKY, MALE ; Levitate
+	db 29, GENGAR, WIDE_LENS, 64, SHINY_MASK | HIDDEN_ABILITY | QUIRKY, MALE ; Levitate
 		db HYPNOSIS, THUNDERBOLT, SHADOW_BALL, DREAM_EATER
 	db -1 ; end
 
@@ -1526,10 +1526,10 @@ Lyra1Group:
 	db "Lyra@"
 	db TRAINERTYPE_ITEM | TRAINERTYPE_EVS | TRAINERTYPE_NICKNAME
 	; party
-	db 18, PIDGEOTTO, NO_ITEM, 36, "@"
+	db 20, PIDGEOTTO, NO_ITEM, 36, "@"
 	db 19, LEAFEON, NO_ITEM, 36, "@"
-	db 17, FLAAFFY, NO_ITEM, 36, "@"
-	db 19, CHARMELEON, ORAN_BERRY, 36, "Cinder@"
+	db 19, FLAAFFY, NO_ITEM, 36, "@"
+	db 21, CHARMELEON, ORAN_BERRY, 36, "Cinder@"
 	db -1 ; end
 
 ; ================
@@ -1564,9 +1564,9 @@ Lyra1Group:
 	db TRAINERTYPE_ITEM | TRAINERTYPE_EVS | TRAINERTYPE_NICKNAME
 	; party
 	db 38, PIDGEOT, NO_ITEM, 100, "@"
-	db 37, LEAFEON, NO_ITEM, 100, "@"
+	db 39, LEAFEON, NO_ITEM, 100, "@"
 	db 37, AZUMARILL, NO_ITEM, 100, "@"
-	db 37, AMPHAROS, NO_ITEM, 100, "@"
+	db 39, AMPHAROS, NO_ITEM, 100, "@"
 	db 40, CHARIZARD, LEFTOVERS, 100, "Cinder@"
 	db -1 ; end
 
@@ -2510,7 +2510,7 @@ endc
 	db "Tiffany@"
 	db TRAINERTYPE_MOVES
 	; party
-	db 49, CLEFABLE
+	db 60, CLEFABLE
 		db HEALINGLIGHT, TRI_ATTACK, MINIMIZE, METRONOME
 	db -1 ; end
 
@@ -2879,11 +2879,11 @@ FisherGroup:
 	db "Tully@"
 	db TRAINERTYPE_MOVES
 	; party
-	db 43, POLIWRATH
+	db 46, POLIWRATH
 		db RAIN_DANCE, HYPNOSIS, WATERFALL, CLOSE_COMBAT
-	db 43, QWILFISH
+	db 46, QWILFISH
 		db ROLLOUT, SURF, PIN_MISSILE, TAKE_DOWN
-	db 45, QWILFISH
+	db 46, QWILFISH
 		db ROLLOUT, WATERFALL, PIN_MISSILE, TAKE_DOWN
 	db -1 ; end
 
@@ -2929,10 +2929,10 @@ FisherGroup:
 	db "Justin@"
 	db TRAINERTYPE_DVS | TRAINERTYPE_PERSONALITY
 	; party
-	db 5, MAGIKARP, $87, $78, $77, ABILITY_1 | QUIRKY, MALE | PLAIN_FORM
-	db 5, MAGIKARP, $88, $B8, $8B, ABILITY_1 | QUIRKY, MALE | MAGIKARP_FOREHEAD_FORM
-	db 15, MAGIKARP, $A2, $AA, $2A, ABILITY_1 | QUIRKY, MALE | MAGIKARP_CALICO3_FORM
-	db 5, MAGIKARP, $39, $93, $99, ABILITY_1 | QUIRKY, MALE | MAGIKARP_ORCA_FORM
+	db 10, MAGIKARP, $87, $78, $77, ABILITY_1 | QUIRKY, MALE | PLAIN_FORM
+	db 10, MAGIKARP, $88, $B8, $8B, ABILITY_1 | QUIRKY, MALE | MAGIKARP_FOREHEAD_FORM
+	db 20, MAGIKARP, $A2, $AA, $2A, ABILITY_1 | QUIRKY, MALE | MAGIKARP_CALICO3_FORM
+	db 10, MAGIKARP, $39, $93, $99, ABILITY_1 | QUIRKY, MALE | MAGIKARP_ORCA_FORM
 	db -1 ; end
 
 ; ================
@@ -3923,8 +3923,8 @@ GruntMGroup:
 	db "Grunt@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 7, RATTATA
-	db 9, ZUBAT
+	db 9, RATTATA 
+	db 10, BEEDRILL
 	db 9, GASTLY
 	db -1 ; end
 
@@ -3934,8 +3934,8 @@ GruntMGroup:
 	db "Grunt@"
 	db TRAINERTYPE_PERSONALITY
 	; party
-	db 33, RATICATE, ABILITY_1 | QUIRKY, MALE | ALOLAN_FORM
-	db 33, SNEASEL, ABILITY_1 | QUIRKY, MALE
+	db 35, RATICATE, ABILITY_1 | QUIRKY, MALE | ALOLAN_FORM
+	db 36, URSARING, ABILITY_1 | QUIRKY, MALE
 	db -1 ; end
 
 ; ================
@@ -3944,9 +3944,9 @@ GruntMGroup:
 	db "Grunt@"
 	db TRAINERTYPE_PERSONALITY
 	; party
-	db 32, GRIMER, ABILITY_1 | QUIRKY, MALE
-	db 33, HOUNDOUR, ABILITY_1 | QUIRKY, MALE
-	db 34, MUK, ABILITY_1 | QUIRKY, MALE | ALOLAN_FORM
+	db 35, NIDOKING, ABILITY_1 | QUIRKY, MALE
+	db 35, HOUNDOUR, ABILITY_1 | QUIRKY, MALE
+	db 36, MUK, ABILITY_1 | QUIRKY, MALE | ALOLAN_FORM
 	db -1 ; end
 
 ; ================
@@ -3955,11 +3955,11 @@ GruntMGroup:
 	db "Grunt@"
 	db TRAINERTYPE_PERSONALITY
 	; party
-	db 31, RATTATA, ABILITY_1 | QUIRKY, MALE
-	db 33, HOUNDOUR, ABILITY_1 | QUIRKY, MALE
-	db 32, RATICATE, ABILITY_1 | QUIRKY, MALE
-	db 32, RATICATE, ABILITY_1 | QUIRKY, MALE | ALOLAN_FORM
-	db 33, MEOWTH, ABILITY_1 | QUIRKY, MALE
+	db 34, DUGTRIO, ABILITY_1 | QUIRKY, MALE
+	db 33, TENTACRUEL, ABILITY_1 | QUIRKY, MALE
+	db 34, RATICATE, ABILITY_1 | QUIRKY, MALE
+	db 34, RATICATE, ABILITY_1 | QUIRKY, MALE | ALOLAN_FORM
+	db 35, PERSIAN, ABILITY_1 | QUIRKY, MALE
 	db -1 ; end
 
 ; ================
@@ -3968,8 +3968,8 @@ GruntMGroup:
 	db "Grunt@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 34, GOLBAT
-	db 34, VENOMOTH
+	db 36, CROBAT
+	db 36, SLOWBRO
 	db -1 ; end
 
 ; ================
@@ -3978,29 +3978,10 @@ GruntMGroup:
 	db "Grunt@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 33, KOFFING
-	db 33, GRIMER
-	db 34, GOLBAT
-	db 34, RATICATE
-	db -1 ; end
-
-; ================
-
-	; GRUNTM
-	db "Grunt@"
-	db TRAINERTYPE_NORMAL
-	; party
-	db 36, WEEZING
-	db -1 ; end
-
-; ================
-
-	; GRUNTM
-	db "Grunt@"
-	db TRAINERTYPE_NORMAL
-	; party
+	db 35, CHANSEY
+	db 35, MUK
+	db 36, GOLBAT
 	db 35, RATICATE
-	db 36, WEEZING
 	db -1 ; end
 
 ; ================
@@ -4009,9 +3990,7 @@ GruntMGroup:
 	db "Grunt@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 32, ZUBAT
-	db 35, GOLBAT
-	db 33, MUK
+	db 39, WEEZING
 	db -1 ; end
 
 ; ================
@@ -4020,19 +3999,8 @@ GruntMGroup:
 	db "Grunt@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 34, MUK
-	db 35, HAUNTER
-	db 36, RATICATE
-	db -1 ; end
-
-; ================
-
-	; GRUNTM
-	db "Grunt@"
-	db TRAINERTYPE_PERSONALITY
-	; party
-	db 23, RATICATE, ABILITY_1 | QUIRKY, MALE
-	db 24, PERSIAN, ABILITY_1 | QUIRKY, MALE | ALOLAN_FORM
+	db 37, TAUROS
+	db 38, ELECTRODE
 	db -1 ; end
 
 ; ================
@@ -4041,6 +4009,19 @@ GruntMGroup:
 	db "Grunt@"
 	db TRAINERTYPE_NORMAL
 	; party
+	db 36, STEELIX
+	db 35, LEDIAN
+	db 36, MUK
+	db -1 ; end
+
+; ================
+
+	; GRUNTM
+	db "Grunt@"
+	db TRAINERTYPE_NORMAL
+	; party
+	db 37, MUK
+	db 37, GENGAR
 	db 37, RATICATE
 	db -1 ; end
 
@@ -4048,10 +4029,10 @@ GruntMGroup:
 
 	; GRUNTM
 	db "Grunt@"
-	db TRAINERTYPE_NORMAL
+	db TRAINERTYPE_PERSONALITY
 	; party
-	db 35, RATICATE
-	db 35, GOLBAT
+	db 26, FURRET, ABILITY_1 | QUIRKY, MALE
+	db 26, PERSIAN, ABILITY_1 | QUIRKY, MALE | ALOLAN_FORM
 	db -1 ; end
 
 ; ================
@@ -4060,8 +4041,27 @@ GruntMGroup:
 	db "Grunt@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 35, MUK
-	db 35, WEEZING
+	db 40, TYPHLOSION
+	db -1 ; end
+
+; ================
+
+	; GRUNTM
+	db "Grunt@"
+	db TRAINERTYPE_NORMAL
+	; party
+	db 37, FLAREON
+	db 37, KINGLER
+	db -1 ; end
+
+; ================
+
+	; GRUNTM
+	db "Grunt@"
+	db TRAINERTYPE_NORMAL
+	; party
+	db 37, MUK
+	db 37, WEEZING
 	db -1 ; end
 
 ; ================
@@ -4070,10 +4070,10 @@ GruntMGroup:
 	db "Grunt@"
 	db TRAINERTYPE_PERSONALITY
 	; party
-	db 26, MEOWTH, ABILITY_1 | QUIRKY, MALE | ALOLAN_FORM
-	db 26, GASTLY, ABILITY_1 | QUIRKY, MALE
-	db 27, RATICATE, ABILITY_1 | QUIRKY, MALE
-	db 26, RATTATA, ABILITY_1 | QUIRKY, MALE | ALOLAN_FORM
+	db 28, MEOWTH, ABILITY_1 | QUIRKY, MALE | ALOLAN_FORM
+	db 28, SLOWKING, ABILITY_1 | QUIRKY, MALE
+	db 27, KADABRA, ABILITY_1 | QUIRKY, MALE
+	db 29, RATICATE, ABILITY_1 | QUIRKY, MALE | ALOLAN_FORM
 	db -1 ; end
 
 ; ================
@@ -4082,7 +4082,7 @@ GruntMGroup:
 	db "Grunt@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 32, GOLBAT
+	db 35, PRIMEAPE
 	db -1 ; end
 
 ; ================
@@ -4091,9 +4091,63 @@ GruntMGroup:
 	db "Grunt@"
 	db TRAINERTYPE_NORMAL
 	; party
+	db 30, VILEPLUME
+	db 30, GOLDUCK
+	db 30, RATICATE
+	db -1 ; end
+
+; ================
+
+	; GRUNTM
+	db "Grunt@"
+	db TRAINERTYPE_NORMAL
+	; party
+	db 30, VENONAT
+	db 30, VENOMOTH
+	db -1 ; end
+
+; ================
+
+	; GRUNTM
+	db "Grunt@"
+	db TRAINERTYPE_NORMAL
+	; party
+	db 30, PERSIAN
+	db 30, MUK
+	db 30, GOLEM
+	db -1 ; end
+
+; ================
+
+	; GRUNTM
+	db "Grunt@"
+	db TRAINERTYPE_NORMAL
+	; party
+	db 30, HYPNO
+	db 30, GOLBAT
+	db 30, GENGAR
+	db -1 ; end
+
+; ================
+
+	; GRUNTM
+	db "Grunt@"
+	db TRAINERTYPE_NORMAL
+	; party
+	db 25, TENTACRUEL
+	db 25, HAUNTER
+	db 25, GOLBAT
+	db -1 ; end
+
+; ================
+
+	; GRUNTM
+	db "Grunt@"
+	db TRAINERTYPE_NORMAL
+	; party
+	db 26, MAROWAK
 	db 27, HOUNDOUR
-	db 28, GOLBAT
-	db 28, RATICATE
+	db 25, HITMONLEE
 	db -1 ; end
 
 ; ================
@@ -4102,8 +4156,8 @@ GruntMGroup:
 	db "Grunt@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 28, VENONAT
-	db 28, VENOMOTH
+	db 39, STARMIE
+	db 39, WEEZING
 	db -1 ; end
 
 ; ================
@@ -4112,9 +4166,8 @@ GruntMGroup:
 	db "Grunt@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 26, ZUBAT
-	db 27, GRIMER
-	db 28, MEOWTH
+	db 38, TENTACRUEL
+	db 38, MUK
 	db -1 ; end
 
 ; ================
@@ -4123,62 +4176,9 @@ GruntMGroup:
 	db "Grunt@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 26, DROWZEE
-	db 27, ZUBAT
-	db 28, HAUNTER
-	db -1 ; end
-
-; ================
-
-	; GRUNTM
-	db "Grunt@"
-	db TRAINERTYPE_NORMAL
-	; party
-	db 23, GOLBAT
-	db 23, HAUNTER
-	db 23, GOLBAT
-	db -1 ; end
-
-; ================
-
-	; GRUNTM
-	db "Grunt@"
-	db TRAINERTYPE_NORMAL
-	; party
-	db 23, KOFFING
-	db 25, HOUNDOUR
-	db 23, TENTACOOL
-	db -1 ; end
-
-; ================
-
-	; GRUNTM
-	db "Grunt@"
-	db TRAINERTYPE_NORMAL
-	; party
-	db 37, HAUNTER
-	db 36, WEEZING
-	db -1 ; end
-
-; ================
-
-	; GRUNTM
-	db "Grunt@"
-	db TRAINERTYPE_NORMAL
-	; party
-	db 36, TENTACRUEL
-	db 35, MUK
-	db -1 ; end
-
-; ================
-
-	; GRUNTM
-	db "Grunt@"
-	db TRAINERTYPE_NORMAL
-	; party
-	db 23, ZUBAT
-	db 24, RATICATE
-	db 25, MURKROW
+	db 26, PINSIR
+	db 26, RATICATE
+	db 26, MURKROW
 	db -1 ; end
 
 ; ================
@@ -4196,7 +4196,7 @@ GruntMGroup:
 	db "Grunt@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 33, RATICATE
+	db 35, PORYGON
 	db -1 ; end
 
 ; ================
@@ -4205,8 +4205,8 @@ GruntMGroup:
 	db "Grunt@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 9, RATTATA
-	db 9, MEOWTH
+	db 12, CUBONE
+	db 12, MEOWTH
 	db -1 ; end
 
 ; ================
@@ -4215,8 +4215,8 @@ GruntMGroup:
 	db "Grunt@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 25, GOLBAT
-	db 25, GOLBAT
+	db 27, CLOYSTER
+	db 29, GOLBAT
 	db 30, ARBOK
 	db -1 ; end
 
@@ -4226,9 +4226,9 @@ GruntMGroup:
 	db "Grunt@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 51, GOLBAT
-	db 52, WEEZING
-	db 51, MUK
+	db 65, DRAGONITE
+	db 65, SNORLAX
+	db 65, MEGANIUM
 	db -1 ; end
 
 ; ================
@@ -4242,8 +4242,8 @@ GruntFGroup:
 	db "Grunt@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 9, ZUBAT
-	db 11, EKANS
+	db 11, ESPEON
+	db 12, EKANS
 	db -1 ; end
 
 ; ================
@@ -4252,7 +4252,7 @@ GruntFGroup:
 	db "Grunt@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 35, ARBOK
+	db 38, ARBOK
 	db -1 ; end
 
 ; ================
@@ -4261,8 +4261,8 @@ GruntFGroup:
 	db "Grunt@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 36, UMBREON
-	db 35, GLOOM
+	db 38, UMBREON
+	db 38, GRANBULL
 	db -1 ; end
 
 ; ================
@@ -4271,10 +4271,10 @@ GruntFGroup:
 	db "Grunt@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 33, EKANS
-	db 34, ODDISH
-	db 35, ARBOK
-	db 36, GLOOM
+	db 38, PILOSWINE
+	db 38, RAICHU
+	db 38, ARBOK
+	db 38, BEEDRILL
 	db -1 ; end
 
 ; ================
@@ -4283,11 +4283,11 @@ GruntFGroup:
 	db "Grunt@"
 	db TRAINERTYPE_MOVES
 	; party
-	db 29, ARBOK
-		db GLARE, SCREECH, ACID, CRUNCH
-	db 28, QWILFISH
-		db DEFENSE_CURL, MINIMIZE, WATER_GUN, ROLLOUT
-	db 28, GLOOM
+	db 32, ARBOK
+		db GLARE, SCREECH, SLUDGE_BOMB, CRUNCH
+	db 32, QWILFISH
+		db TOXIC, MINIMIZE, SURF, PROTECT
+	db 32, VILEPLUME
 		db GROWTH, STUN_SPORE, SLEEP_POWDER, MEGA_DRAIN
 	db -1 ; end
 
@@ -4297,9 +4297,9 @@ GruntFGroup:
 	db "Grunt@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 22, EKANS
-	db 23, ARBOK
-	db 23, GLOOM
+	db 25, MACHOKE
+	db 25, MILTANK
+	db 26, DODRIO
 	db -1 ; end
 
 ; ================
@@ -4539,8 +4539,8 @@ OfficerMGroup:
 	db "Keith@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 15, GROWLITHE
-	db 15, GROWLITHE
+	db 17, GROWLITHE
+	db 18, WARTORTLE
 	db -1 ; end
 
 ; ================
@@ -4549,8 +4549,8 @@ OfficerMGroup:
 	db "Dirk@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 14, GROWLITHE
-	db 14, MACHOP
+	db 17, GROWLITHE
+	db 17, MACHOP
 	db -1 ; end
 
 ; ================
@@ -4575,7 +4575,7 @@ OfficerFGroup:
 	db "Mara@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 17, GROWLITHE
+	db 19, TAUROS
 	db -1 ; end
 
 ; ================
@@ -4584,10 +4584,10 @@ OfficerFGroup:
 	db "Jenny@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 53, SQUIRTLE
-	db 53, SQUIRTLE
-	db 53, SQUIRTLE
-	db 53, SQUIRTLE
+	db 65, SQUIRTLE
+	db 65, SQUIRTLE
+	db 65, SQUIRTLE
+	db 65, SQUIRTLE
 	db -1 ; end
 
 ; ================
@@ -4601,7 +4601,7 @@ NurseGroup:
 	db "Joy@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 50, CHANSEY
+	db 60, CHANSEY
 	db -1 ; end
 
 ; ================
@@ -4615,7 +4615,7 @@ PokemaniacGroup:
 	db "Brent@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 32, MAROWAK
+	db 35, MAROWAK
 	db -1 ; end
 
 ; ================
@@ -4624,7 +4624,7 @@ PokemaniacGroup:
 	db "Brent@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 37, KANGASKHAN
+	db 40, KANGASKHAN
 	db -1 ; end
 
 ; ================
@@ -4633,7 +4633,7 @@ PokemaniacGroup:
 	db "Brent@"
 	db TRAINERTYPE_MOVES
 	; party
-	db 42, PORYGON
+	db 45, PORYGON
 		db RECOVER, PSYCHIC_M, CONVERSION, TRI_ATTACK
 	db -1 ; end
 
@@ -4643,8 +4643,8 @@ PokemaniacGroup:
 	db "Brent@"
 	db TRAINERTYPE_MOVES
 	; party
-	db 47, CHANSEY
-		db ROLLOUT, ATTRACT, RETURN, FRESH_SNACK
+	db 51, CHANSEY
+		db TOXIC, ATTRACT, RETURN, FRESH_SNACK
 	db -1 ; end
 
 ; ================
@@ -4653,7 +4653,7 @@ PokemaniacGroup:
 	db "Larry@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 11, SLOWPOKE
+	db 16, DITTO
 	db -1 ; end
 
 ; ================
@@ -4662,8 +4662,8 @@ PokemaniacGroup:
 	db "Andrew@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 24, MAROWAK
-	db 24, MAROWAK
+	db 27, MAROWAK
+	db 27, LANTURN
 	db -1 ; end
 
 ; ================
@@ -4672,7 +4672,7 @@ PokemaniacGroup:
 	db "Calvin@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 26, KANGASKHAN
+	db 29, KANGASKHAN
 	db -1 ; end
 
 ; ================
@@ -4681,8 +4681,8 @@ PokemaniacGroup:
 	db "Shane@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 20, NIDORINA
-	db 20, NIDORINO
+	db 22, NIDORINA
+	db 22, SUDOWODOO
 	db -1 ; end
 
 ; ================
@@ -4691,7 +4691,7 @@ PokemaniacGroup:
 	db "Beckett@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 30, SLOWBRO
+	db 33, SLOWKING
 	db -1 ; end
 
 ; ================
@@ -4700,7 +4700,7 @@ PokemaniacGroup:
 	db "Ron@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 30, NIDOKING
+	db 33, NIDOKING
 	db -1 ; end
 
 ; ================
@@ -4719,7 +4719,7 @@ PokemaniacGroup:
 	db "Issac@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 12, FLAAFFY
+	db 15, WOBBUFFET
 	db -1 ; end
 
 ; ================
@@ -4728,8 +4728,8 @@ PokemaniacGroup:
 	db "Donald@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 11, SLOWPOKE
-	db 11, NIDORAN_M
+	db 13, SLOWPOKE
+	db 13, NIDORAN_M
 	db -1 ; end
 
 ; ================
@@ -4738,7 +4738,7 @@ PokemaniacGroup:
 	db "Zach@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 37, RHYHORN
+	db 40, HITMONTOP
 	db -1 ; end
 
 ; ================
@@ -4747,8 +4747,8 @@ PokemaniacGroup:
 	db "Miller@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 28, NIDOKING
-	db 28, NIDOQUEEN
+	db 30, NIDOKING
+	db 30, NIDOQUEEN
 	db -1 ; end
 
 ; ================
@@ -4757,9 +4757,9 @@ PokemaniacGroup:
 	db "Aidan@"
 	db TRAINERTYPE_MOVES
 	; party
-	db 36, SNORLAX
+	db 39, SNORLAX
 		db HEADBUTT, DEFENSE_CURL, ROLLOUT, EXPLOSION
-	db 36, PORYGON2
+	db 39, PORYGON2
 		db CONVERSION, RECOVER, PSYBEAM, TRI_ATTACK
 	db -1 ; end
 
@@ -4769,8 +4769,8 @@ PokemaniacGroup:
 	db "Clive@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 23, SLOWPOKE
-	db 23, WOOPER
+	db 25, SLOWPOKE
+	db 25, WOOPER
 	db 25, NIDORINO
 	db -1 ; end
 
@@ -4785,8 +4785,8 @@ CosplayerGroup:
 	db "Clara@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 11, VULPIX
-	db 11, VULPIX
+	db 13, VULPIX
+	db 13, VULPIX
 	db -1 ; end
 
 ; ================
@@ -4840,8 +4840,8 @@ SuperNerdGroup:
 	db "Eric@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 11, GRIMER
-	db 12, PORYGON
+	db 13, GRIMER
+	db 14, PORYGON
 	db -1 ; end
 
 ; ================
@@ -4891,10 +4891,10 @@ SuperNerdGroup:
 	db "Teru@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 7, MAGNEMITE
+	db 11, ELEKID
 	db 11, VOLTORB
-	db 7, MAGNEMITE
-	db 9, MAGNEMITE
+	db 11, MAGNEMITE
+	db 11, MAGNEMITE
 	db -1 ; end
 
 ; ================
@@ -5305,7 +5305,7 @@ BeautyGroup:
 	db "Victoria@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 9, SENTRET
+	db 15, FLAAFFY
 	db 13, SENTRET
 	db 17, SENTRET
 	db -1 ; end
@@ -5316,9 +5316,9 @@ BeautyGroup:
 	db "Samantha@"
 	db TRAINERTYPE_MOVES
 	; party
-	db 16, MEOWTH
+	db 18, MEOWTH
 		db SCRATCH, GROWL, BITE, PAY_DAY
-	db 16, MEOWTH
+	db 18, MEOWTH
 		db SCRATCH, GROWL, BITE, SLASH
 	db -1 ; end
 
@@ -5369,8 +5369,8 @@ BeautyGroup:
 	db "Callie@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 16, CLEFABLE
-	db 16, WIGGLYTUFF
+	db 18, CLEFABLE
+	db 19, WIGGLYTUFF
 	db -1 ; end
 
 ; ================
@@ -5379,8 +5379,8 @@ BeautyGroup:
 	db "Cassandra@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 16, CLEFABLE
-	db 16, WIGGLYTUFF
+	db 18, CLEFABLE
+	db 18, WIGGLYTUFF
 	db -1 ; end
 
 ; ================
@@ -5389,7 +5389,7 @@ BeautyGroup:
 	db "Charlotte@"
 	db TRAINERTYPE_PERSONALITY | TRAINERTYPE_NICKNAME
 	; party
-	db 20, BELLOSSOM, SHINY_MASK | ABILITY_1 | QUIRKY, FEMALE, "Blossom@"
+	db 29, BELLOSSOM, SHINY_MASK | ABILITY_1 | QUIRKY, FEMALE, "Blossom@"
 	db -1 ; end
 
 ; ================
@@ -5457,7 +5457,7 @@ BugManiacGroup:
 	db "Lou@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 17, PARASECT
+	db 20, PARASECT
 	db -1 ; end
 
 ; ================
@@ -5466,8 +5466,8 @@ BugManiacGroup:
 	db "Rob@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 60, BEEDRILL
-	db 59, BUTTERFREE
+	db 65, BEEDRILL
+	db 65, BUTTERFREE
 	db -1 ; end
 
 ; ================
@@ -5476,9 +5476,9 @@ BugManiacGroup:
 	db "Ed@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 61, YANMA
-	db 62, BEEDRILL
-	db 62, BUTTERFREE
+	db 65, YANMA
+	db 65, BEEDRILL
+	db 65, BUTTERFREE
 	db -1 ; end
 
 ; ================
@@ -5487,8 +5487,8 @@ BugManiacGroup:
 	db "Doug@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 59, BUTTERFREE
-	db 57, ARIADOS
+	db 63, BUTTERFREE
+	db 63, ARIADOS
 	db -1 ; end
 
 ; ================
@@ -5497,8 +5497,8 @@ BugManiacGroup:
 	db "Dane@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 59, BEEDRILL
-	db 61, BUTTERFREE
+	db 63, BEEDRILL
+	db 63, BUTTERFREE
 	db -1 ; end
 
 ; ================
@@ -5507,7 +5507,7 @@ BugManiacGroup:
 	db "Dion@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 63, ARIADOS
+	db 66, ARIADOS
 	db -1 ; end
 
 ; ================
@@ -5516,9 +5516,9 @@ BugManiacGroup:
 	db "Stacey@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 60, METAPOD
-	db 62, METAPOD
-	db 64, METAPOD
+	db 80, METAPOD
+	db 90, METAPOD
+	db 99, METAPOD
 	db -1 ; end
 
 ; ================
@@ -5527,9 +5527,9 @@ BugManiacGroup:
 	db "Ellis@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 58, WEEDLE
-	db 60, KAKUNA
-	db 62, BEEDRILL
+	db 80, WEEDLE
+	db 70, KAKUNA
+	db 65, BEEDRILL
 	db -1 ; end
 
 ; ================
@@ -5538,9 +5538,9 @@ BugManiacGroup:
 	db "Abner@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 59, BUTTERFREE
-	db 59, BEEDRILL
-	db 59, PIKACHU
+	db 65, BUTTERFREE
+	db 65, BEEDRILL
+	db 65, PIKACHU
 	db -1 ; end
 
 ; ================
@@ -5549,9 +5549,9 @@ BugManiacGroup:
 	db "Kenta@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 60, BEEDRILL
-	db 60, BEEDRILL
-	db 60, PARASECT
+	db 63, BEEDRILL
+	db 63, BEEDRILL
+	db 63, PARASECT
 	db -1 ; end
 
 ; ================
@@ -5560,9 +5560,9 @@ BugManiacGroup:
 	db "Robby@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 60, BUTTERFREE
-	db 60, BUTTERFREE
-	db 60, PARASECT
+	db 63, BUTTERFREE
+	db 63, BUTTERFREE
+	db 63, PARASECT
 	db -1 ; end
 
 ; ================
@@ -5592,8 +5592,8 @@ BugManiacGroup:
 	db "Kai@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 58, VENONAT
-	db 60, VENOMOTH
+	db 61, VENONAT
+	db 64, VENOMOTH
 	db -1 ; end
 
 ; ================
@@ -5607,8 +5607,8 @@ RuinManiacGroup:
 	db "Jones@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 6, OMANYTE
-	db 6, KABUTO
+	db 9, OMANYTE
+	db 9, KABUTO
 	db -1 ; end
 
 ; ================
@@ -5617,8 +5617,8 @@ RuinManiacGroup:
 	db "Leland@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 23, DUNSPARCE
-	db 25, AERODACTYL
+	db 28, DUNSPARCE
+	db 28, AERODACTYL
 	db -1 ; end
 
 ; ================
@@ -5627,9 +5627,9 @@ RuinManiacGroup:
 	db "Petry@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 23, OMANYTE
-	db 23, KABUTO
-	db 25, AERODACTYL
+	db 26, OMANYTE
+	db 26, KABUTO
+	db 28, AERODACTYL
 	db -1 ; end
 
 ; ================
@@ -5638,8 +5638,8 @@ RuinManiacGroup:
 	db "Glyn@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 25, OMASTAR
-	db 25, KABUTOPS
+	db 30, OMASTAR
+	db 30, KABUTOPS
 	db -1 ; end
 
 ; ================
@@ -5650,7 +5650,7 @@ RuinManiacGroup:
 	; party
 	db 54, SANDSLASH
 	db 54, DUGTRIO
-	db 56, AERODACTYL
+	db 60, AERODACTYL
 	db -1 ; end
 
 ; ================
@@ -5727,7 +5727,7 @@ FirebreatherGroup:
 	db "Ray@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 9, VULPIX
+	db 10, VULPIX
 	db -1 ; end
 
 ; ================
@@ -5780,10 +5780,10 @@ JugglerGroup:
 	db "Irwin@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 2, VOLTORB
-	db 6, VOLTORB
-	db 10, VOLTORB
-	db 14, VOLTORB
+	db 4, VOLTORB
+	db 8, VOLTORB
+	db 12, VOLTORB
+	db 16, VOLTORB
 	db -1 ; end
 
 ; ================
@@ -6398,8 +6398,8 @@ HexManiacGroup:
 	db "Tamara@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 16, GASTLY
-	db 18, MISDREAVUS
+	db 19, GASTLY
+	db 20, MISDREAVUS
 	db -1 ; end
 
 ; ================
@@ -7065,11 +7065,11 @@ RichBoyGroup:
 	db "Irving@"
 	db TRAINERTYPE_ITEM | TRAINERTYPE_DVS | TRAINERTYPE_PERSONALITY | TRAINERTYPE_MOVES
 	; party
-	db 16, TOGETIC, KINGS_ROCK, $EE, $EE, $EE, ABILITY_2 | QUIRKY, MALE
+	db 19, TOGETIC, KINGS_ROCK, $EE, $EE, $EE, ABILITY_2 | QUIRKY, MALE
 		db HEADBUTT, METRONOME, SWEET_KISS, DISARM_VOICE
-	db 16, CHANSEY, KINGS_ROCK, $EE, $EE, $EE, ABILITY_2 | QUIRKY, MALE
+	db 19, CHANSEY, KINGS_ROCK, $EE, $EE, $EE, ABILITY_2 | QUIRKY, MALE
 		db HEADBUTT, FRESH_SNACK, SWEET_KISS, ZEN_HEADBUTT
-	db 17, SYLVEON, KINGS_ROCK, $EE, $EE, $EE, ABILITY_2 | QUIRKY, FEMALE
+	db 20, SYLVEON, KINGS_ROCK, $EE, $EE, $EE, ABILITY_2 | QUIRKY, FEMALE
 		db HEADBUTT, ATTRACT, MUD_SLAP, DISARM_VOICE
 	db -1 ; end
 
@@ -7225,9 +7225,9 @@ CowgirlGroup:
 	db "Annie@"
 	db TRAINERTYPE_ITEM | TRAINERTYPE_DVS | TRAINERTYPE_PERSONALITY | TRAINERTYPE_MOVES
 	; party
-	db 27, MILTANK, LEFTOVERS, FAKE_PERFECT_DVS, ABILITY_2 | ADAMANT, FEMALE
+	db 30, MILTANK, LEFTOVERS, FAKE_PERFECT_DVS, ABILITY_2 | ADAMANT, FEMALE
 		db DEFENSE_CURL, ROLLOUT, FRESH_SNACK, BODY_SLAM
-	db 28, TAUROS, LEFTOVERS, FAKE_PERFECT_DVS, ABILITY_2 | ADAMANT, MALE
+	db 30, TAUROS, LEFTOVERS, FAKE_PERFECT_DVS, ABILITY_2 | ADAMANT, MALE
 		db ZEN_HEADBUTT, QUICK_ATTACK, PURSUIT, BULK_UP
 	db -1 ; end
 
@@ -7293,9 +7293,9 @@ SailorGroup:
 	db "Huey@"
 	db TRAINERTYPE_MOVES
 	; party
-	db 38, POLITOED
+	db 41, POLITOED
 		db WHIRLPOOL, RAIN_DANCE, BODY_SLAM, PERISH_SONG
-	db 38, POLIWRATH
+	db 41, POLIWRATH
 		db SURF, STRENGTH, ICE_PUNCH, CLOSE_COMBAT
 	db -1 ; end
 
@@ -7661,7 +7661,7 @@ SwimmerMGroup:
 	db "Romeo@"
 	db TRAINERTYPE_PERSONALITY | TRAINERTYPE_MOVES
 	; party
-	db 57, AZUMARILL, ABILITY_2 | ADAMANT, MALE
+	db 62, AZUMARILL, ABILITY_2 | ADAMANT, MALE
 		db AQUA_TAIL, PLAY_ROUGH, ROLLOUT, CLOSE_COMBAT
 	db -1 ; end
 
@@ -8701,9 +8701,9 @@ DragonTamerGroup:
 	db "Paul@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 37, DRATINI
-	db 37, DRATINI
-	db 38, DRAGONAIR
+	db 40, DRATINI
+	db 40, DRATINI
+	db 41, DRAGONAIR
 	db -1 ; end
 
 ; ================
@@ -8712,9 +8712,9 @@ DragonTamerGroup:
 	db "Darin@"
 	db TRAINERTYPE_MOVES
 	; party
-	db 38, DRAGONAIR
+	db 41, DRAGONAIR
 		db BODY_SLAM, SURF, DRAGON_PULSE, AQUA_TAIL
-	db 38, CHARIZARD
+	db 41, CHARIZARD
 		db SLASH, FLY, DRAGON_CLAW, FLAME_WHEEL
 	db -1 ; end
 
@@ -8724,7 +8724,7 @@ DragonTamerGroup:
 	db "Adam@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 37, YANMA
+	db 40, YANMA
 	db 38, SEADRA
 	db 39, DRATINI
 	db -1 ; end
