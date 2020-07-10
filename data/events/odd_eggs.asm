@@ -14,10 +14,10 @@ prob_total = 0
 ; Elekid
 	prob 12
 	prob 12
-; Tyrogue
+; Chansey
 	prob 10
 	prob 10
-; Munchlax
+; Misdreavus
 	prob 10
 	prob 10
 
@@ -163,9 +163,9 @@ OddEgg2:
 	bigdw 6 ; SDef
 	db "Egg@@@@@@@@"
 
-	db TYROGUE
-	db NO_ITEM
-	db TACKLE, RAGE, FORESIGHT, DIZZY_PUNCH
+	db CHANSEY
+	db LUCKY_EGG
+	db DOUBLE_SLAP, DISARM_VOICE, FORESIGHT, ZEN_HEADBUTT
 	dw 02560 ; OT ID
 	dt 0 ; Exp
 	db 0, 0, 0, 0, 0, 0 ; EVs
@@ -186,9 +186,9 @@ OddEgg2:
 	bigdw 6 ; SDef
 	db "Egg@@@@@@@@"
 
-	db TYROGUE
-	db NO_ITEM
-	db TACKLE, RAGE, FORESIGHT, DIZZY_PUNCH
+	db CHANSEY
+	db LUCKY_EGG
+	db DOUBLE_SLAP, DISARM_VOICE, FORESIGHT, ZEN_HEADBUTT
 	dw 00256 ; OT ID
 	dt 0 ; Exp
 	db 0, 0, 0, 0, 0, 0 ; EVs
@@ -209,9 +209,9 @@ OddEgg2:
 	bigdw 6 ; SDef
 	db "Egg@@@@@@@@"
 
-	db MUNCHLAX
-	db NO_ITEM
-	db SWEET_KISS, METRONOME, TACKLE, DIZZY_PUNCH
+	db MISDREAVUS
+	db LUCKY_EGG
+	db SWEET_KISS, AURORA_BEAM, PSY_BEAM, DISARM_VOICE
 	dw 04096 ; OT ID
 	dt 0 ; Exp
 	db 0, 0, 0, 0, 0, 0 ; EVs
@@ -232,9 +232,9 @@ OddEgg2:
 	bigdw 7 ; SDef
 	db "Egg@@@@@@@@"
 
-	db MUNCHLAX
-	db NO_ITEM
-	db SWEET_KISS, METRONOME, TACKLE, DIZZY_PUNCH
+	db MISDREAVUS
+	db LUCKY_EGG
+	db SWEET_KISS, AURORA_BEAM, PSY_BEAM, DISARM_VOICE
 	dw 00768 ; OT ID
 	dt 0 ; Exp
 	db 0, 0, 0, 0, 0, 0 ; EVs
@@ -258,7 +258,7 @@ OddEgg2:
 MystriEgg:
 	db TOGEPI
 	db NO_ITEM
-	db GROWL, CHARM, MOONBLAST, AEROBLAST
+	db AURA_SPHERE, CHARM, MOONBLAST, AEROBLAST
 	dw 08192 ; OT ID
 	dt 0 ; Exp
 	db 0, 0, 0, 0, 0, 0 ; EVs
