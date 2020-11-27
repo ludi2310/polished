@@ -1,12 +1,12 @@
 NPCTrades:
 ; OT names have 3 characters less padding so the total struct is 32 bytes
-; TRADE_WITH_MIKE_FOR_SMEARGLE in Goldenrod City
-	rawchar 0, ABRA,       SMEARGLE,     "Muscle@@@@@"
-	db $EE, $EE, $EE, HIDDEN_ABILITY | JOLLY, MALE,   LEVEL_BALL,   SITRUS_BERRY
+; TRADE_WITH_MIKE_FOR_MACHOP in Goldenrod City
+	rawchar 0, ABRA,       MACHOP,     "Muscle@@@@@"
+	db $EE, $EE, $EE, HIDDEN_ABILITY | ADAMANT, MALE,   LEVEL_BALL,   SITRUS_BERRY
 	dw 37460
 	rawchar "Mike@@@@", $00
-; TRADE_WITH_KYLE_FOR_ELEKID in Violet City
-	rawchar 0, POLIWAG,    ELEKID,    "Mimic@@@@@@"
+; TRADE_WITH_KYLE_FOR_VOLTORB in Violet City
+	rawchar 0, POLIWAG,    VOLTORB,    "Mimic@@@@@@"
 	db $EE, $EE, $EE, HIDDEN_ABILITY | ADAMANT,   MALE,   PREMIER_BALL, PERSIM_BERRY
 	dw 48926
 	rawchar "Kyle@@@@", $00
@@ -25,8 +25,8 @@ NPCTrades:
 	db $EE, $EE, $EE, HIDDEN_ABILITY | JOLLY,   MALE,   PARK_BALL,    SILVERPOWDER
 	dw 15616
 	rawchar "Chris@@@", $00
-; TRADE_WITH_KIM_FOR_WOBBUFFET in Route 14
-	rawchar 3, CHANSEY,  WOBBUFFET,    "Chance@@@@@"
+; TRADE_WITH_KIM_FOR_CHANSEY in Route 14
+	rawchar 3, WOBBUFFET,  CHANSEY,    "Chance@@@@@"
 	db $EE, $EE, $EE, HIDDEN_ABILITY | CALM,    FEMALE, HEAL_BALL,    LUCKY_EGG
 	dw 26491
 	rawchar "Kim@@@@@", $00
@@ -35,8 +35,8 @@ NPCTrades:
 	db $EE, $EE, $EE, HIDDEN_ABILITY | CAREFUL, FEMALE, LURE_BALL,    EVIOLITE
 	dw 50082
 	rawchar "Jacques@", $00
-; TRADE_WITH_HARI_FOR_BULBASAUR in Ecruteak City
-	rawchar 0, FARFETCH_D, BULBASAUR,      "Clarence@@@"
-	db $EE, $EE, $EE, HIDDEN_ABILITY | SASSY,   MALE,   FAST_BALL,    GOLD_LEAF
+; TRADE_WITH_HARI_FOR_DODUO in Ecruteak City
+	rawchar 0, FARFETCH_D, DODUO,      "Clarence@@@"
+	db $EE, $EE, $EE, HIDDEN_ABILITY | HASTY,   MALE,   FAST_BALL,    GOLD_LEAF
 	dw 43972
 	rawchar "Hari@@@@", $00
