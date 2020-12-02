@@ -68,7 +68,7 @@ VioletMart:
 	db ANTIDOTE
 	db PARALYZEHEAL
 	db AWAKENING
-	db X_ATTACK
+	db REPEL
 	db X_DEFEND
 	db X_SPEED
 	db FLOWER_MAIL
