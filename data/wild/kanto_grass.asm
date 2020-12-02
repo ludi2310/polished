@@ -1105,7 +1105,7 @@
 	db 67, TANGROWTH
 	db 68, MACHAMP
 	db 67, ELECTRODE
-	db 70, DITTO
+	db 70, MEWTWO
 
 	map_id CERULEAN_CAVE_2F
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
@@ -1116,7 +1116,7 @@
 	db 69, MAGNEZONE
 	db 70, ALAKAZAM
 	db 69, ELECTRODE
-	db 72, DITTO
+	db 72, HO_OH
 	; day
 	db 67, CROBAT
 	db 67, PARASECT
@@ -1124,7 +1124,7 @@
 	db 69, MAGNEZONE
 	db 70, ALAKAZAM
 	db 69, ELECTRODE
-	db 72, DITTO
+	db 72, CELEBI
 	; nite
 	db 67, CROBAT
 	db 67, PARASECT
@@ -1132,7 +1132,7 @@
 	db 69, MAGNEZONE
 	db 70, GENGAR
 	db 69, ELECTRODE
-	db 72, DITTO
+	db 72, LUGIA
 
 	map_id CERULEAN_CAVE_B1F
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
@@ -1143,23 +1143,23 @@
 	db 71, GOLEM
 	db 72, ALAKAZAM
 	db 71, RAICHU
-	db 74, DITTO
+	db 74, MEW
 	; day
 	db 69, PARASECT
 	db 69, MAGNEZONE
 	db 70, MACHAMP
 	db 71, GOLEM
-	db 72, ALAKAZAM
-	db 71, RAICHU
-	db 74, DITTO
+	db 72, SUICUNE
+	db 71, RAIKOU
+	db 74, ENTEI
 	; nite
 	db 69, PARASECT
 	db 69, MAGNEZONE
 	db 70, MACHAMP
 	db 71, GOLEM
-	db 72, GENGAR
-	db 71, RAICHU
-	db 74, DITTO
+	db 72, ZAPDOS
+	db 71, ARTICUNO
+	db 74, MOLTRES
 
 	map_id SOUL_HOUSE_B1F
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
