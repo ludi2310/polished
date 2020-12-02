@@ -4782,7 +4782,7 @@ MantineEvosAttacks:
 	db 16, HEADBUTT
 	db 19, WATER_PULSE
 	db 23, AQUA_JET ; Wide Guard → new move
-	db 27, TAKE_DOWN
+	db 27, AURORA_BEAM
 	db 32, AGILITY
 	db 36, AIR_SLASH
 	db 39, ROOST ; Aqua Ring → similar move
@@ -4833,7 +4833,7 @@ HoundourEvosAttacks:
 
 HoundoomEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, LEER
+	db 1, SOLAR_BEAM
 	db 1, EMBER
 	db 4, PURSUIT ; Howl → egg move
 	db 8, SMOKESCREEN ; Smog → new move
@@ -4862,9 +4862,9 @@ KingdraEvosAttacks:
 	db 21, WATER_PULSE ; Bubble Beam → TM move
 	db 26, OCTAZOOKA
 	db 31, OUTRAGE ; Brine → HGSS tutor move
-	db 38, AGILITY
+	db 38, DRAGON_DANCE
 	db 45, DRAGON_PULSE
-	db 52, DRAGON_DANCE
+	db 52, ICE_BEAM
 	db 60, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
@@ -5065,7 +5065,7 @@ MagmortarEvosAttacks:
 	db 42, FOCUS_BLAST ; Sunny Day → TM move
 	db 49, FLAMETHROWER
 	db 55, FIRE_BLAST
-	db 62, HYPER_BEAM
+	db 62, AURA_SPHERE
 	db 0 ; no more level-up moves
 
 MiltankEvosAttacks:
@@ -5323,7 +5323,7 @@ GlaceonEvosAttacks:
 	db 17, BITE
 	db 20, ICE_SHARD ; Ice Fang → Ice Shard
 	db 25, HAIL ; Ice Shard → Hail
-	db 29, BARRIER
+	db 29, RECOVER
 	db 33, MIRROR_COAT
 	db 37, ICE_BEAM ; Hail → TM move
 	db 41, DOUBLE_EDGE ; Last Resort → tutor move
