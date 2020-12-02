@@ -3259,7 +3259,7 @@ MewEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, SKETCH ; Reflect Type → new move
 	db 1, TELEPORT ; event move
-	db 1, TACKLE ; Pound → similar move
+	db 1, RECOVER ; Pound → similar move
 	db 1, TRANSFORM
 	db 1, CONFUSION ; Let's Go move
 	db 10, HEADBUTT ; Mega Punch → TM move
@@ -3268,7 +3268,7 @@ MewEvosAttacks:
 	db 40, BARRIER
 	db 50, ANCIENTPOWER
 	db 60, BATON_PASS ; Amnesia → Baton Pass
-	db 70, SAFEGUARD ; Me First → Mewtwo move
+	db 70, AURA_SPHERE ; Me First → Mewtwo move
 	db 80, AMNESIA ; Baton Pass → Amnesia
 	db 90, NASTY_PLOT
 	db 100, AURA_SPHERE
@@ -3280,7 +3280,7 @@ ChikoritaEvosAttacks:
 	db 1, TACKLE
 	db 1, LEECH_SEED
 	db 6, RAZOR_LEAF
-	db 9, POISONPOWDER
+	db 9, TOXIC
 	db 12, HEALINGLIGHT ; Synthesis → similar move
 	db 17, REFLECT
 	db 20, DISARM_VOICE ; Magical Leaf → new move
@@ -3302,7 +3302,7 @@ BayleefEvosAttacks:
 	db 1, TACKLE
 	db 1, LEECH_SEED
 	db 6, RAZOR_LEAF
-	db 9, POISONPOWDER
+	db 9, TOXIC
 	db 12, HEALINGLIGHT ; Synthesis → similar move
 	db 18, REFLECT
 	db 22, DISARM_VOICE ; Magical Leaf → new move
@@ -3321,10 +3321,10 @@ BayleefEvosAttacks:
 MeganiumEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, PETAL_DANCE ; evolution move
-	db 1, TACKLE
+	db 1, SWORDS_DANCE
 	db 1, GROWL
 	db 6, RAZOR_LEAF
-	db 9, POISONPOWDER
+	db 9, TOXIC
 	db 12, HEALINGLIGHT ; Synthesis → similar move
 	db 18, REFLECT
 	db 22, DISARM_VOICE ; Magical Leaf → new move
@@ -3332,7 +3332,7 @@ MeganiumEvosAttacks:
 	db 34, ANCIENTPOWER ; Sweet Scent → HGSS tutor move
 	db 40, LIGHT_SCREEN
 	db 46, BODY_SLAM
-	db 50, SAFEGUARD
+	db 50, EARTH_POWER
 	db 56, PLAY_ROUGH ; Aromatherapy → new move
 	db 62, SOLAR_BEAM
 	db 66, HEAL_BELL ; Aromatherapy → similar move
@@ -3351,7 +3351,7 @@ CyndaquilEvosAttacks:
 	db 19, FLAME_WHEEL
 	db 22, DEFENSE_CURL
 	db 28, DIG ; Flame Charge → TM move
-	db 31, SWIFT
+	db 31, ROLLOUT
 	db 37, REVERSAL ; Lava Plume → egg move
 	db 40, FLAMETHROWER
 	db 46, EARTH_POWER ; Inferno → new move
@@ -3371,8 +3371,8 @@ QuilavaEvosAttacks:
 	db 13, QUICK_ATTACK
 	db 20, FLAME_WHEEL
 	db 24, DEFENSE_CURL
-	db 31, SWIFT
-	db 35, DIG ; Flame Charge → TM move
+	db 31, ROLLOUT
+	db 35, ROLLOUT ; Flame Charge → TM move
 	db 42, REVERSAL ; Lava Plume → egg move
 	db 46, FLAMETHROWER
 	db 53, EARTH_POWER ; Inferno → new move
@@ -3385,19 +3385,19 @@ QuilavaEvosAttacks:
 TyphlosionEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, FIRE_PUNCH ; evolution move
-	db 1, TACKLE
-	db 1, LEER
+	db 1, THUNDERPUNCH
+	db 1, GYRO_BALL
 	db 6, SMOKESCREEN
 	db 10, EMBER
 	db 13, QUICK_ATTACK
 	db 20, FLAME_WHEEL
 	db 24, DEFENSE_CURL
-	db 31, SWIFT
+	db 31, ROLLOUT
 	db 35, DIG ; Flame Charge → TM move
 	db 43, REVERSAL ; Lava Plume → egg move
 	db 48, FLAMETHROWER
 	db 56, EARTH_POWER ; Inferno → new move
-	db 61, ROLLOUT
+	db 61, CRUNCH
 	db 69, DOUBLE_EDGE
 	db 74, EARTHQUAKE ; Burn Up → TM move
 	db 81, FLARE_BLITZ ; Eruption → egg move
@@ -3433,7 +3433,7 @@ CroconawEvosAttacks:
 	db 6, WATER_GUN
 	db 8, RAGE
 	db 13, BITE
-	db 15, SCARY_FACE
+	db 16, ICE_PUNCH
 	db 21, METAL_CLAW ; Ice Fang → egg move
 	db 24, REVERSAL ; Flail → similar move
 	db 30, AGILITY ; Feraligatr move
@@ -3458,14 +3458,14 @@ FeraligatrEvosAttacks:
 	db 15, SCARY_FACE
 	db 21, METAL_CLAW ; Ice Fang → egg move
 	db 24, REVERSAL ; Flail → similar move
-	db 32, AGILITY
+	db 32, AQUA_TAIL
 	db 37, CRUNCH
 	db 45, ANCIENTPOWER ; Chip Away → HGSS tutor move
 	db 50, SLASH
 	db 56, DRAGON_DANCE
 	db 62, THRASH
 	db 68, OUTRAGE ; HGSS tutor move
-	db 73, AQUA_TAIL
+	db 73, NIGHT_SLASH
 	db 78, CLOSE_COMBAT ; Superpower → similar move
 	db 84, HYDRO_PUMP
 	db 0 ; no more level-up moves
@@ -3810,7 +3810,7 @@ TangrowthEvosAttacks:
 NatuEvosAttacks:
 	db EVOLVE_LEVEL, 25, XATU
 	db 0 ; no more evolutions
-	db 1, PECK
+	db 1, WING_ATTACK
 	db 1, LEER
 	db 6, NIGHT_SHADE
 	db 9, TELEPORT
@@ -3830,7 +3830,7 @@ NatuEvosAttacks:
 XatuEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, AIR_SLASH ; evolution move
-	db 1, PECK
+	db 1, WING_ATTACK
 	db 1, LEER
 	db 6, NIGHT_SHADE
 	db 9, TELEPORT
