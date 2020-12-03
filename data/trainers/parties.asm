@@ -4145,7 +4145,7 @@ GruntMGroup:
 	db "Grunt@"
 	db TRAINERTYPE_NORMAL
 	; party
-	db 23, LICKITUNG
+	db 23, ESPEON
 	db 25, HOUNDOUR
 	db 23, TENTACOOL
 	db -1 ; end
