@@ -3920,7 +3920,7 @@ BellossomEvosAttacks:
 	db 1, GIGA_DRAIN
 	db 1, HEAL_BELL ; new move
 	db 1, SUNNY_DAY
-	db 1, SOLARBEAM
+	db 1, SOLAR_BEAM
 	db 39, GROWTH ; Quiver Dance → Growth
 	db 49, MOONBLAST ; Petal Blizzard → Gloom move
 	db 59, PETAL_DANCE ; evolution move
